@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: white;
+}
+
+header {
+    background-color: red;
+    color:white;
+    padding:10px;
+    text-align: center;
+}
+.network {
+    color: white;
+    background: black;
+    padding: 4px 15px;
+    border-radius: 10px;
+}
+
+p{
+    background:orange;
+    border-radius: 8px;
+    display: inline;
+    padding: 5px;
+}
+
+section{
+    padding: 20px;
+}
+    
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            width: 260px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            background: #c40000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-header h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .per {
+            font-size: 14px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card-body li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .card-body li::before {
+            content: "✔";
+            color: #c40000;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* FORM PENDAFTARAN */
+.form-container {
+    max-width: 420px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c40000;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: red;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1>
+        <span class="Bangkit">Bangkit</span>
+        <span class="network">network</span>
+    </h1>
+    <p>
+     <span class="int"># Internet Dari Tetangga</span>
+
+     </p>
+    <h2>Lancar Internetnya, Unlimited Sistem OLT 100% Fiber</h2>
+
+    </header>
+
+    <section>
+        <h2>Paket Internet</h2>
+        
+    <div class="container">
+
+    <div class="card">
+        <div class="card-header">
+            <h2>BANGKIT BASIC</h2>
+            <div class="price">110rb <span class="per">/bulan</span></div>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Kecepatan unggah hingga 50 Mbps</li>
+                <li>Kecepatan unduh hingga 10 Mbps</li>
+                <li>Kuota tidak terbatas</li>
+                <li>Biaya pemasangan 250rb (Prabayar)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>BANGKIT BASIC</h2>
+            <div class="price">120rb <span class="per">/bulan</span></div>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Kecepatan unggah hingga 50 Mbps</li>
+                <li>Kecepatan unduh hingga 15 Mbps</li>
+                <li>Kuota tidak terbatas</li>
+                <li>Biaya pemasangan 250rb (Prabayar)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>BANGKIT HOME</h2>
+            <div class="price">150rb <span class="per">/bulan</span></div>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Kecepatan unggah hingga 50 Mbps</li>
+                <li>Kecepatan unduh hingga 25 Mbps</li>
+                <li>Kuota tidak terbatas</li>
+                <li>Gratis pemasangan</li>
+                <li>Bayar bulanan di awal Rp 150.000</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>BANGKIT PRO</h2>
+            <div class="price">165rb <span class="per">/bulan</span></div>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Kecepatan unggah hingga 50 Mbps</li>
+                <li>Kecepatan unduh hingga 30 Mbps</li>
+                <li>Kuota tidak terbatas</li>
+                <li>Gratis pemasangan</li>
+                <li>Bayar bulanan di awal Rp 165.000</li>
+            </ul>
+        </div>
+    </div>
+    <h2 style="text-align:center;">Form Pendaftaran</h2>
+
+<div class="form-container">
+    <h3>Form Pendaftaran</h3>
+
+    <form onsubmit="kirimWhatsApp(); return false;">
+
+        <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan nama lengkap" required>
+        </div>
+
+        <div class="form-group">
+            <label>Nomor WhatsApp</label>
+            <input type="tel" id="wa" placeholder>
+        </div>
+
+        <div class="form-group">
+            <label>Nomor NIK KTP</label>
+            <input type="tel" id="wa" placeholder>
+        </div>
+
+        <div class="form-group">
+            <label>Alamat Lengkap</label>
+            <textarea id="alamat" placeholder="Masukkan alamat lengkap" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Pilih Paket</label>
+            <select id="paket" required>
+                <option value="">-- Pilih Paket --</option>
+                <option>BANGKIT BASIC 110rb</option>
+                <option>BANGKIT BASIC 120rb</option>
+                <option>BANGKIT HOME 150rb</option>
+                <option>BANGKIT PRO 165rb</option>
+            </select>
+        </div>
+
+        <button type="submit">Daftar Sekarang</button>
+
+    </form>
+</div>
+    </section>
+
+</div>
+<script>
+function kirimWhatsApp() {
+    var nama = document.getElementById("nama").value;
+    var wa = document.getElementById("wa").value;
+    var alamat = document.getElementById("alamat").value;
+    var paket = document.getElementById("paket").value;
+
+    var noAdmin = "6287782617477"; // GANTI NOMOR ADMIN
+
+    var pesan =
+        "PENDAFTARAN INTERNET BANGKIT NETWORK\n\n" +
+        "Nama: " + nama + "\n" +
+        "WhatsApp: " + wa + "\n" +
+        "Alamat: " + alamat + "\n" +
+        "Paket: " + paket;
+
+    var url = "https://api.whatsapp.com/send?phone=" 
+              + noAdmin 
+              + "&text=" 
+              + encodeURIComponent(pesan);
+
+    window.location.href = url;
+}
+</script>
+</body>
+</html>
